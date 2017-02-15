@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>User Survey</title>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Short survey for this site's users </h1>
+      <form id="FormSurvey">
+        <div class="form-group">
+          <label for="labelname">What's your name?</label>
+          <input id="labelname" class="form-control" type="text">
+        </div>
+
+        <p>What's your favorite food</p>
+        <select class="form-control" id="food">
+          <option>Pizza</option>
+          <option>Steak</option>
+          <option>Salad</option>
+        </select>
+
+        <p>What's your favorite music</p>
+        <label>
+          <input type="radio" name="music" value="jazz">
+          Jazz
+        </label>
+        <br>
+        <label>
+          <input type="radio" name="music" value="Rock">
+          Rock
+        </label>
+          <br>
+        <label>
+          <input type="radio" name="music" value="Classical">
+          Classical
+        </label>
+          <br>
+        <label>
+          <input type="radio" name="music" value="Pop">
+          Pop
+        </label>
+        <br>
+
+        <div class="form-group">
+          <label for="birthdate">When were you born?</label>
+          <input id="birthdate" class="form-control" type="date">
+        </div>
+
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+
+        <button type="submit" class="btn">confirm</button>
+      </form>
+
+      <div id="output">
+        <p><span class="OPname"></span></p>
+        <p><span class="OPfood"></span></p>
+        <p><span class="OPmusic"></span></p>
+        <p><span class="OPbirthdate"></span></p>
+        <p><span class="OPcolor"></span></p>
+      </div>
+  </body>
+</html>
